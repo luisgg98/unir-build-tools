@@ -1,6 +1,6 @@
 FROM jenkins/inbound-agent as agent
 
-FROM maven:3.6.3-jdk-11-slim
+FROM maven:3.9.7-eclipse-temurin-21-jammy
 
 RUN apt-get update && \
     apt-get install -y \

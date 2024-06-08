@@ -25,7 +25,8 @@ Los comandos del Makefile funcionarán en Linux y MacOS. En caso de usar Windows
 
 ## Guía rápida para Nexus
 
-- Ejecuta `make start-nexus`. Si quieres que haya comunicación entre Jenkins y Nexus, ejecuta `make start-nexus-jenkins` _después_ de haber arrancado Jenkins.
+- Ejecuta `make start-nexus`. 
+- Si quieres que haya comunicación entre Jenkins y Nexus, ejecuta `make start-nexus-jenkins` _después_ de haber arrancado Jenkins.
 - Ejecuta `make nexus-password` y copia la password al portapapeles.
 - Accede a http://localhost:8081 y usa la password anterior para crear el primer usuario.
 - Cuando termines de trabajar con Nexus, ejecuta `make stop-nexus`.

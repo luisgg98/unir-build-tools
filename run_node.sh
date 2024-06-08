@@ -1,0 +1,2 @@
+JENKINS_NODE_AGENT_SECRET=6d8b95280b52fb0a1ed819601344dd48c0e79f0752f01e196b65c025b88e0f58
+docker run -d --rm --network jenkins --name jenkins-agent-node --init --env JENKINS_URL=http://jenkins-server:8080 --env JENKINS_AGENT_NAME=agent03 --env JENKINS_SECRET=${JENKINS_NODE_AGENT_SECRET} --env JENKINS_AGENT_WORKDIR=/home/jenkins/agent jenkins-agent-node

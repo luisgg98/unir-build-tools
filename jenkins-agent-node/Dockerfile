@@ -1,8 +1,8 @@
 FROM jenkins/inbound-agent as agent
 
-FROM node:12.20.0-alpine3.12
+FROM node:lts-alpine3.20
 
-RUN apk -U add openjdk11-jre docker git make
+RUN apk -U add openjdk21-jre git make
 
 COPY --from=agent /usr/local/bin/jenkins-agent /usr/local/bin/jenkins-agent
 COPY --from=agent /usr/share/jenkins/agent.jar /usr/share/jenkins/agent.jar
